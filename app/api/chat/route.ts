@@ -5,7 +5,7 @@ import { bashTool, computerTool } from "@/lib/e2b/tool";
 import { prunedMessages } from "@/lib/utils";
 
 // Allow streaming responses up to 30 seconds
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { messages, sandboxId }: { messages: UIMessage[]; sandboxId: string } =
